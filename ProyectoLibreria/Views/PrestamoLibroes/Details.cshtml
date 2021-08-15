@@ -1,0 +1,50 @@
+﻿@model ProyectoLibreria.PrestamoLibro
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PrestamoLibro</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.dias_prestamolibro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dias_prestamolibro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha_prestamolibro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fecha_prestamolibro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Libro.nombre_libro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Libro.nombre_libro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario.nombres_usuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Usuario.nombres_usuario)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_prestamolibro }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,66 @@
+﻿@model ProyectoLibreria.Usuario
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Usuario</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombres_usuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombres_usuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.apellidos_usuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.apellidos_usuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.edad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.edad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.direccion_usuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.direccion_usuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.activo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.activo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tipoUsuario.nombre_tipoUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipoUsuario.nombre_tipoUsuario)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_usuario }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

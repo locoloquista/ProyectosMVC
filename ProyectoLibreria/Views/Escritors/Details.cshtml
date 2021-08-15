@@ -1,0 +1,42 @@
+﻿@model ProyectoLibreria.Escritor
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Escritor</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre_escritor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombre_escritor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nacionalidad_escritor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nacionalidad_escritor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.activo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.activo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_escritor }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
