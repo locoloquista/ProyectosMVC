@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8de372888e674f79b5078543f35ba151" Name="Diagram1" ZoomLevel="63">
+        <EntityTypeShape EntityType="LibreriaModel.Escritor" Width="1.5" PointX="7.25" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibreriaModel.Genero" Width="1.5" PointX="0.5" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibreriaModel.Libro" Width="1.5" PointX="2.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibreriaModel.LibroEscritor" Width="1.5" PointX="2.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibreriaModel.PrestamoLibro" Width="1.5" PointX="5.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibreriaModel.sysdiagrams" Width="1.5" PointX="10.875" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibreriaModel.tipoUsuario" Width="1.5" PointX="11.25" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibreriaModel.Usuario" Width="1.5" PointX="8.125" PointY="6" IsExpanded="true" />
+        <AssociationConnector Association="LibreriaModel.FK__LibroEscr__id_es__2F10007B" ManuallyRouted="false" />
+        <AssociationConnector Association="LibreriaModel.FK__Libro__id_genero__3A81B327" ManuallyRouted="false" />
+        <AssociationConnector Association="LibreriaModel.FK__LibroEscr__id_li__2E1BDC42" ManuallyRouted="false" />
+        <AssociationConnector Association="LibreriaModel.FK__PrestamoL__id_li__5165187F" ManuallyRouted="false" />
+        <AssociationConnector Association="LibreriaModel.FK__PrestamoL__id_us__5070F446" ManuallyRouted="false" />
+        <AssociationConnector Association="LibreriaModel.FK__Usuario__id_tipo__4D94879B" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
