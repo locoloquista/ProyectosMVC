@@ -45,6 +45,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -114,12 +120,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Core">
       <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.3\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
     </Reference>
@@ -170,8 +170,15 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\EscritorsController.cs" />
+    <Compile Include="Controllers\GeneroesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LibroesController.cs" />
+    <Compile Include="Controllers\LibroEscritorsController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PrestamoLibroesController.cs" />
+    <Compile Include="Controllers\tipoUsuariosController.cs" />
+    <Compile Include="Controllers\UsuariosController.cs" />
     <Compile Include="Escritor.cs">
       <DependentUpon>ModeloLibreria.tt</DependentUpon>
     </Compile>
@@ -293,6 +300,41 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Escritors\Create.cshtml" />
+    <Content Include="Views\Escritors\Delete.cshtml" />
+    <Content Include="Views\Escritors\Details.cshtml" />
+    <Content Include="Views\Escritors\Edit.cshtml" />
+    <Content Include="Views\Escritors\Index.cshtml" />
+    <Content Include="Views\Generoes\Create.cshtml" />
+    <Content Include="Views\Generoes\Delete.cshtml" />
+    <Content Include="Views\Generoes\Details.cshtml" />
+    <Content Include="Views\Generoes\Edit.cshtml" />
+    <Content Include="Views\Generoes\Index.cshtml" />
+    <Content Include="Views\Libroes\Create.cshtml" />
+    <Content Include="Views\Libroes\Delete.cshtml" />
+    <Content Include="Views\Libroes\Details.cshtml" />
+    <Content Include="Views\Libroes\Edit.cshtml" />
+    <Content Include="Views\Libroes\Index.cshtml" />
+    <Content Include="Views\LibroEscritors\Create.cshtml" />
+    <Content Include="Views\LibroEscritors\Delete.cshtml" />
+    <Content Include="Views\LibroEscritors\Details.cshtml" />
+    <Content Include="Views\LibroEscritors\Edit.cshtml" />
+    <Content Include="Views\LibroEscritors\Index.cshtml" />
+    <Content Include="Views\PrestamoLibroes\Create.cshtml" />
+    <Content Include="Views\PrestamoLibroes\Delete.cshtml" />
+    <Content Include="Views\PrestamoLibroes\Details.cshtml" />
+    <Content Include="Views\PrestamoLibroes\Edit.cshtml" />
+    <Content Include="Views\PrestamoLibroes\Index.cshtml" />
+    <Content Include="Views\tipoUsuarios\Create.cshtml" />
+    <Content Include="Views\tipoUsuarios\Delete.cshtml" />
+    <Content Include="Views\tipoUsuarios\Details.cshtml" />
+    <Content Include="Views\tipoUsuarios\Edit.cshtml" />
+    <Content Include="Views\tipoUsuarios\Index.cshtml" />
+    <Content Include="Views\Usuarios\Create.cshtml" />
+    <Content Include="Views\Usuarios\Delete.cshtml" />
+    <Content Include="Views\Usuarios\Details.cshtml" />
+    <Content Include="Views\Usuarios\Edit.cshtml" />
+    <Content Include="Views\Usuarios\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

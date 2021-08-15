@@ -1,0 +1,40 @@
+﻿@model ProyectoLibreria.LibroEscritor
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>LibroEscritor</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Escritor.nombre_escritor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Escritor.nombre_escritor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Libro.nombre_libro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Libro.nombre_libro)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
