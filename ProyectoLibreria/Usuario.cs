@@ -27,6 +27,8 @@ namespace ProyectoLibreria
         public string direccion_usuario { get; set; }
         public int id_tipoUsuario { get; set; }
         public int activo { get; set; }
+        public string usuario1 { get; set; }
+        public string contraseña { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<PrestamoLibro> PrestamoLibro { get; set; }
