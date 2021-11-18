@@ -80,6 +80,8 @@
           <Property Name="direccion_usuario" Type="varchar" MaxLength="250" />
           <Property Name="id_tipoUsuario" Type="int" Nullable="false" />
           <Property Name="activo" Type="int" Nullable="false" />
+          <Property Name="usuario" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="contraseña" Type="varchar" MaxLength="15" Nullable="false" />
         </EntityType>
         <Association Name="FK__Libro__id_genero__3A81B327">
           <End Role="Genero" Type="Self.Genero" Multiplicity="1" />
@@ -278,6 +280,8 @@
           <Property Name="activo" Type="Int32" Nullable="false" />
           <NavigationProperty Name="PrestamoLibro" Relationship="Self.FK__PrestamoL__id_us__5070F446" FromRole="Usuario" ToRole="PrestamoLibro" />
           <NavigationProperty Name="tipoUsuario" Relationship="Self.FK__Usuario__id_tipo__4D94879B" FromRole="Usuario" ToRole="tipoUsuario" />
+          <Property Name="usuario1" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="contraseña" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
         </EntityType>
         <Association Name="FK__LibroEscr__id_es__2F10007B">
           <End Role="Escritor" Type="Self.Escritor" Multiplicity="1" />
@@ -465,6 +469,8 @@
           <EntitySetMapping Name="Usuario">
             <EntityTypeMapping TypeName="LibreriaModel.Usuario">
               <MappingFragment StoreEntitySet="Usuario">
+                <ScalarProperty Name="contraseña" ColumnName="contraseña" />
+                <ScalarProperty Name="usuario1" ColumnName="usuario" />
                 <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
                 <ScalarProperty Name="nombres_usuario" ColumnName="nombres_usuario" />
                 <ScalarProperty Name="apellidos_usuario" ColumnName="apellidos_usuario" />
